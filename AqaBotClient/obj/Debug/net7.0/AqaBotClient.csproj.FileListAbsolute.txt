@@ -1,0 +1,14 @@
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.AssemblyInfoInputs.cache
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.AssemblyInfo.cs
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.csproj.CoreCompileInputs.cache
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\AqaBotClient.exe
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\AqaBotClient.deps.json
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\AqaBotClient.runtimeconfig.json
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\AqaBotClient.dll
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\AqaBotClient.pdb
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.dll
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\refint\AqaBotClient.dll
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.pdb
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.genruntimeconfig.cache
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\ref\AqaBotClient.dll

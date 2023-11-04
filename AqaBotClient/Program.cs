@@ -3,8 +3,10 @@
 
 abstract class Program
 {
-    public static void Main(string[] args)
+    private static Client AqaBot;
+    public static async Task Main(string[] args)
     {
-        
+        Client aqa;
     }
+    
 }
