@@ -3,10 +3,11 @@
 
 abstract class Program
 {
-    private static Client AqaBot;
+    private static  Client AqaBot = new Client("botTest1.aternos.me"); // Testing IP
     public static async Task Main(string[] args)
     {
-        Client aqa;
+        await AqaBot.AsyncConnect();
+        await Task.Delay(-1);
     }
     
 }
