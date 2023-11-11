@@ -1,12 +1,14 @@
-﻿namespace AqaBotClient;
+﻿using System.Net.Sockets;
+
+namespace AqaBotClient;
 
 public class Client : IDisposable
 {
+    
+    
+    //TODO: make events 
     #region EventsAndEtc
 
-    
-
-    
     public delegate  void MessageEventHandler(object sender, Message message); // Message event handler
         
     public event MessageEventHandler OnMessageRecived = (sender,msg) =>
@@ -25,11 +27,20 @@ public class Client : IDisposable
     public event ConnectionEventHandler OnConnectionError = (sender) => throw new Exception("Connection error..."); // throw when connection error
 
     #endregion
+
+    #region server
+
+    
+
     
     public string Name = "Aqa Bot";
     public string Ip;
-    public int? Port;
+    public int Port;
 
+    #endregion
+    
+    private TcpClient _client = new TcpClient();
+    
     private bool _isDisposed=false;
 
     
@@ -42,32 +53,28 @@ public class Client : IDisposable
         this.Port = port;
     }
     
-    public Client(string ip)
-    {
-        this.Ip = ip;
-    }
-    
     public Client(string ip, string name)
     {
         this.Ip = ip;
         this.Name = name;
     }
     
-    
-    public Client(string ip,int port,string name)
-    {
-        this.Ip = ip;
-        this.Port = port;
-        this.Name = name;
-    }
-
     //TODO:Make Connecting to server
-    public async Task AsyncConnect()
+    public async Task AsyncConnect() 
     {
-        
+        try
+        {
+            await _client.ConnectAsync(Ip,Port); // Connecting to server 1 attempt
+        }
+        catch (Exception e) // On connection error
+        {
+            OnConnectionError.Invoke(this);
+            Console.WriteLine(e.Message);
+            throw;
+        }
     }
     
-    private void Disposing()
+    private void Disposing()    
     {
         if (_isDisposed)
         {
@@ -76,6 +83,7 @@ public class Client : IDisposable
         }
     }
 
+    
     public void Dispose()
     {
         // TODO release managed resources here
@@ -85,7 +93,7 @@ public class Client : IDisposable
 
     
     //TODO:Make first package send
-    public void FirstPackageAsyncSend()
+    public async Task AsyncFirstPackageAsyncSend()
     {
         
     }

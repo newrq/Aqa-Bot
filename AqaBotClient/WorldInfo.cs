@@ -9,6 +9,7 @@ public class WorldInfo
     public int PlayerCount; // Player count on server
     public int ServerMaxSize; // Max player count on server
     
+    
     public WorldInfo() // idk why, maybe im delete it 
     {
         
