@@ -1,11 +1,12 @@
 ﻿namespace AqaBotClient;
 
+//TODO: Make this
+// Fix the abstract Player class
+// Make Player and SelfPlayer (Client Player)
 public abstract class Player
 {
     private string Name { get; set; }
-    private string Userid { get; set; }
-
-
+    private string Userid { get; set; } // Or etc else
 
     // base player class
     protected Player(string nickname, string userid)
@@ -27,15 +28,7 @@ public abstract class Player
     {
         return Userid;
     }
-
     
-    //TODO: Sending message function
-    public void SendChat(string message)
-    {
-        // NOT WORKING FUNCTION
-        Chat.MessageSend(this,message);
-    }
-
     public WorldInfo GetWorldInfo()
     {
         return new WorldInfo();

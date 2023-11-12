@@ -12,3 +12,6 @@ D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\refint\AqaBotClient.dll
 D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.pdb
 D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.genruntimeconfig.cache
 D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\ref\AqaBotClient.dll
+D:\Project\AqaBotClient\AqaBotClient\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.csproj.AssemblyReference.cache
+D:\Project\AqaBotClient\AqaBotClient\obj\Debug\net7.0\AqaBotClient.csproj.CopyComplete
